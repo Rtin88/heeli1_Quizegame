@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login&Register.css">
+    <title>InfiniQuiz/Login</title>
+</head>
+
+<body>
+
+    <div class="login-light"></div>
+    <div class="login-box">
+        <form action="#">
+            <input type="checkbox" class="input-check" id="input-check">
+            <label for="input-check" class="toggle">
+                <span class="text off">off</span>
+                <span class="text on">on</span>
+            </label>
+            <div class="light"></div>
+            <h2 class="login_title">ورود</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <div class="input-group">
+                    <input class="user_n" type="text" required>
+                    <label for="">نام کاربری</label>
+                </div>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <div class="input-group">
+                    <input class="user_p" type="password" required>
+                    <label for="">رمز</label>
+                </div>
+                <div class="input-line"></div>
+            </div>
+            <button id="loginbtn" class="submit" type="submit">وارد شو</button>
+            <div class="register-link">
+                <p class="extra">هنوز ثبت نام نکردی؟<span> </span><a id="login" href="#">ثبت نام</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="Login.js"></script>
+</body>
+
+</html>
