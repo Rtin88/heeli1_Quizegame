@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="MainPage.css">
+    <title>InfiniQuiz/MainPage</title>
 </head>
 <body>
-    <p>Lets begin! :)</p>
+    <div class="header-container container">
+    <header>
+        <div class="infinity" role="img" aria-label="نماد بی نهایت">
+    <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M20 40
+               C20 10, 60 10, 80 40
+               C100 70, 140 70, 140 40
+               C140 10, 100 10, 80 40
+               C60 70, 20 70, 20 40
+               Z" />
+    </svg>
+  </div>
+      <div class="menu-toggle" id="menuToggle" aria-label="باز/بسته کردن منو" role="button" tabindex="0" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="navMenu" aria-hidden="true">
+        <ul>
+            <li><a href="#"><span>🗿</span> گردونه شانس</a></li>
+            <li><a href="#"><span>❓</span>صفحه سوالات</a></li>
+            <li><a href="#"><span>👤</span> پروفایل</a></li>
+        </ul>
+      </nav>
+      <div class="right-items">
+        <div class="coming-soon"><a href="#">به زودی 🚀</a></div>
+        <div class="profile"><a href="Login.html">ورود | ثبت نام</a></div>
+      </div>
+    </header>
+  </div>
+
+
+<script src="MainPage.js"></script>
 </body>
 </html>
