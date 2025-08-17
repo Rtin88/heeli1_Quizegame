@@ -1,0 +1,74 @@
+        @font-face {
+            font-family: 'font_total';
+            src: url("D:/kaspar/Digi Madasi Bold.otf");
+        }
+        @font-face {
+            font-family: 'font';
+            src: url("D:/kaspar/FontsFree-Net-ir_sans (1).ttf");
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+        
+        .error-container {
+            max-width: 400px;
+            padding: 2rem;
+        }
+        
+        .pixel-face {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: bounce 0.5s infinite alternate;
+        }
+        
+        .error-text {
+            font-family: 'font';
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            height: 60px;
+            overflow: hidden;
+        }
+        
+        .typing {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            white-space: nowrap;
+            animation: blink 0.7s step-end infinite;
+        }
+        
+        @keyframes bounce {
+            to { transform: translateY(-10px); }
+        }
+        
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #333; }
+        }
+        
+        .btn {
+            font-family: 'font_total';
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: #6c5ce7;
+            stroke: #4ac;
+            filter: drop-shadow(0 0 10px #4ac);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
