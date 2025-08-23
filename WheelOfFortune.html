@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InfiniQuiz/WheelOfFortune</title>
+<link rel="stylesheet" href="WheelOfFortune.css">
+</head>
+<body>
+
+<div class="header-box">
+  <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
+  <nav class="mobile" id="navMenu">
+    <ul>
+      <li><a href="#">🏠 خانه</a></li>
+      <li><a href="#">❓ سوالات</a></li>
+      <li><a href="#">🎮 بازی‌ها</a></li>
+    </ul>
+  </nav>
+  <div class="coming-soon"><a href="#">به زودی 🚀</a></div>
+</div>
+
+<div class="wheel-container">
+  <svg class="wheel" viewBox="0 0 500 500"><g transform="translate(250,250)"></g></svg>
+  <div class="pointer"></div>
+</div>
+
+<button id="spinBtn" class="btn">🎡 چرخش</button>
+<div id="timer" class="timer"></div>
+<div id="result" class="result"></div>
+
+<script src="WheelOfFortune.js"></script>
+</body>
+</html>
