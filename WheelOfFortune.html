@@ -8,27 +8,46 @@
 </head>
 <body>
 
-<div class="header-box">
-  <div class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></div>
-  <nav class="mobile" id="navMenu">
-    <ul>
-      <li><a href="#">🏠 خانه</a></li>
-      <li><a href="#">❓ سوالات</a></li>
-      <li><a href="#">🎮 بازی‌ها</a></li>
-    </ul>
-  </nav>
-  <div class="coming-soon"><a href="#">به زودی 🚀</a></div>
+<div class="header-container container">
+  <header>
+    <div class="infinity" role="img" aria-label="نماد بی نهایت">
+      <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 40
+           C20 10, 60 10, 80 40
+           C100 70, 140 70, 140 40
+           C140 10, 100 10, 80 40
+           C60 70, 20 70, 20 40
+           Z" />
+      </svg>
+    </div>
+    <div class="menu-toggle" id="menuToggle" aria-label="باز/بسته کردن منو" role="button" tabindex="0" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+    <nav id="navMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#"><span>🗿</span> گردونه شانس</a></li>
+        <li><a href="#"><span>❓</span> صفحه سوالات</a></li>
+        <li><a href="#"><span>👤</span> پروفایل</a></li>
+      </ul>
+    </nav>
+    <div class="right-items">
+      <div class="coming-soon"><a href="Error.html">به زودی 🚀</a></div>
+      <div class="profile"><a href="Login.html">ورود | ثبت نام</a></div>
+    </div>
+  </header>
 </div>
 
-<div class="wheel-container">
-  <svg class="wheel" viewBox="0 0 500 500"><g transform="translate(250,250)"></g></svg>
-  <div class="pointer"></div>
+<div class="wheel-wrapper">
+  <div class="wheel-stage">
+    <div id="wheel" class="wheel"></div>
+    <div class="hub"></div>
+    <div id="pointer" class="pointer"></div>
+    <div class="pointer-cap"></div>
+  </div>
+  <button id="spinBtn" class="btn">بچرخونید!</button>
+  <div id="cooldownText" class="cooldown-text"></div>
+  <div id="toast" class="toast"></div>
 </div>
-
-<button id="spinBtn" class="btn">🎡 چرخش</button>
-<div id="timer" class="timer"></div>
-<div id="result" class="result"></div>
-
 <script src="WheelOfFortune.js"></script>
 </body>
 </html>
