@@ -17,6 +17,7 @@
             align-items: center;
             text-align: center;
             color: #333;
+            caret-color: transparent;
         }
         
         .error-container {
