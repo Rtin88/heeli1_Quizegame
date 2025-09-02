@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InfiniQuiz/QuestionPage</title>
+    <link rel="stylesheet" href="Question.css">
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="infinity" role="img" aria-label="نماد بی نهایت">
+          <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 40 C20 10, 60 10, 80 40 C100 70, 140 70, 140 40 C140 10, 100 10, 80 40 C60 70, 20 70, 20 40 Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="menu-toggle"
+          id="menuToggle"
+          role="button"
+          tabindex="0"
+          aria-label="باز/بسته کردن منو"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </div>
+        <nav id="navMenu" aria-hidden="true">
+          <ul>
+            <li><a href="WheelOfFortune.html">🗿 گردونه شانس</a></li>
+            <li><a href="#">❓ صفحه سوالات</a></li>
+            <div class="coming-soon">
+              <li><a href="Error.html">🚀 به زودی</a></li>
+            </div>
+            <li class="profile"><a href="Login.html">ورود | ثبت نام</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+    <main>
+      <div class="container">
+        <section class="quiz-card" data-time-limit="30" data-removes="2">
+          <div class="timer-wrap">
+            <div class="timer-track">
+              <div class="timer-fill" id="timerFill"></div>
+            </div>
+          </div>
+          <div class="meta">
+            <div class="category" id="categoryName">رایانه و تکنولوژی 💻</div>
+          </div>
+          <h2 class="question" id="questionText">
+            کدام گزینه زبان برنامه‌نویسی سطح بالا است؟
+          </h2>
+          <div class="options" id="optionsList"></div>
+
+          <div class="controls">
+            <button class="btn btn-remove" id="bombBtn" aria-label="حذف گزینه">
+              <div class="bomb">
+                <span class="bomb-emoji" aria-hidden="true">💣</span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  line-height: 1;
+                "
+              >
+                <div style="font-size: 0.9rem; font-weight: 700">حذف گزینه</div>
+                <div style="font-size: 0.8rem; color: #445">
+                  (<span id="removesLeft">2</span>)
+                </div>
+              </div>
+            </button>
+
+            <button class="btn btn-next" id="nextBtn" aria-hidden="true">
+              سوال بعد
+            </button>
+
+            <button
+              class="btn btn-submit"
+              id="submitBtn"
+              title="ثبت پاسخ"
+              aria-label="ثبت پاسخ"
+            >
+              ✓
+            </button>
+          </div>
+
+          <div class="status" id="statusMsg" aria-live="polite"></div>
+        </section>
+      </div>
+    </main>
+    <script src="Question.js"></script>
+  </body>
+</html>
